@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Pinyon+Script&display=swap');
+
+:root {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-image: url('../images/background-img.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0px;
+
+
+}
+
+#content {
+    display: grid;
+    grid-template: 1fr 5fr 1fr/100vw;
+    height: 100vh;
+}
+
+.hero {
+    background-color: hsla(0, 0%, 0%, 0.38);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero > div {
+    width: 100px;
+    height: 60px;
+    border-radius: 0;
+    grid-row: 1/2;
+    background-color: hsla(0, 0%, 0%, 0);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 27px;
+}
+
+.main-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pinyon Script', cursive;
+    width: 100%;
+    grid-row: 2/3;
+    font-size: 100px;
+
+
+}
+
+.main-body > div {
+    background-color: hsla(0, 0%, 0%, 0.38);
+    width: 100%;
+    text-align: center;
+}
+
+.footer {
+    background-color: hsla(0, 0%, 0%, 0.38);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+
+}
