@@ -16,6 +16,8 @@ body {
     display: grid;
     grid-template: 1fr 5fr 1fr/98.9vw;
     height: 100vh;
+    padding: 0px;
+    gap: 0px;
 }
 
 .hero {
@@ -61,6 +63,7 @@ body {
     text-align: center;
 }
 
+/** Menu page**/
 .main-body > div#div-container {
     background-color: hsla(0, 0%, 0%, 0.38);
     width: 800px;
@@ -74,8 +77,12 @@ body {
     padding: 40px;
 }
 
+#div-container {
+    
+}
+
 #div-container > div {
-    background-color: hsla(0, 0%, 0%, 0.3);
+    background-color: hsla(0, 0%, 0%, 0.442);
     color: white;
     width: 300px;
     margin-left: 60px;
@@ -95,6 +102,30 @@ body {
     width: auto;
 }
 
+/** About Page **/
+
+#about {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 300px;
+    background-color: hsla(0, 0%, 0%, 0.8);
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+#about-header {
+    font-size: 50px;
+    text-decoration-line: underline;
+}
+
+#about-text-div {
+    font-size: large;
+    font-family:'Open Sans', sans-serif;
+}
+
+/*** Footer **/
 .footer {
     background-color: hsla(0, 0%, 0%, 0.8);
     display: flex;

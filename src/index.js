@@ -1,7 +1,8 @@
 import './styles.css';
 // eslint-disable-next-line import/no-cycle
 import menu from "./menu";
-
+// eslint-disable-next-line import/no-cycle
+import about from './about';
 
 const content = document.querySelector('#content')
     // hero
@@ -34,7 +35,6 @@ function home() {
 home()
 
 
-
     // footer   
 const footer = document.createElement('div');
 const footerContent = document.createElement('div')
@@ -44,7 +44,6 @@ footerContent.innerHTML = 'background photo by <a href="https://unsplash.com/@br
 content.appendChild(footer);
 
 
-console.log(menu);
 
 export default mainBody;
 menuBtn.addEventListener('click',() => {
@@ -54,4 +53,8 @@ menuBtn.addEventListener('click',() => {
 homeBtn.addEventListener("click",() => {
 
     home()
+})
+
+aboutBtn.addEventListener('click', () => {
+    about()
 })
